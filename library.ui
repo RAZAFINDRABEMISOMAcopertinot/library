@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>921</width>
+    <width>925</width>
     <height>630</height>
    </rect>
   </property>
@@ -1243,7 +1243,7 @@
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
-      <string>Page</string>
+      <string>Settings</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
@@ -1335,7 +1335,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>New Category Name</string>
+         <string>New Author Name</string>
         </property>
        </widget>
        <widget class="QLineEdit" name="lineEdit_21">
@@ -1399,7 +1399,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>New Category Name</string>
+         <string>New Publisher Name</string>
         </property>
        </widget>
        <widget class="QLineEdit" name="lineEdit_22">
@@ -1422,7 +1422,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>Add New Category</string>
+         <string>Add New Publisher</string>
         </property>
        </widget>
        <widget class="QGroupBox" name="groupBox_5">
@@ -1562,7 +1562,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>921</width>
+     <width>925</width>
      <height>26</height>
     </rect>
    </property>
