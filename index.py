@@ -17,7 +17,7 @@ class MainApp(QMainWindow, ui):
 
     def Handle_UI_Changes(self):
         self.Hide_Theme()
-        # self.tabWidget.tabBar().setVisible(False)
+        self.tabWidget.tabBar().setVisible(False)
 
     def Handle_Buttons(self):
         self.pushButton_5.clicked.connect(self.Show_Theme)
