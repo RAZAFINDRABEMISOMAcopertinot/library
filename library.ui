@@ -1454,7 +1454,7 @@
    </widget>
    <widget class="QGroupBox" name="groupBox_6">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -1539,13 +1539,20 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>290</y>
+       <y>0</y>
        <width>41</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="text">
-      <string>&gt;&gt;</string>
+      <string>x</string>
      </property>
     </widget>
    </widget>

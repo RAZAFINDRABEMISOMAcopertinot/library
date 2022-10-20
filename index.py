@@ -20,6 +20,7 @@ class MainApp(QMainWindow, ui):
 
     def Handle_Buttons(self):
         self.pushButton_5.clicked.connect(self.Show_Theme)
+        self.pushButton_21.clicked.connect(self.Hide_Theme)
 
     def Show_Theme(self):
         self.groupBox_6.show()
