@@ -28,6 +28,11 @@ class MainApp(QMainWindow, ui):
         self.pushButton_3.clicked.connect(self.Open_Users_Tab)
         self.pushButton_4.clicked.connect(self.Open_Settings_Tab)
 
+
+        self.pushButton_8.clicked.connect(self.Add_New_Book)
+
+        self.pushButton_14.clicked.connect(self.Add_New_Category)
+
     def Show_Theme(self):
         self.groupBox_6.show()
 
@@ -56,7 +61,17 @@ class MainApp(QMainWindow, ui):
     #################### Books ############################
 
     def Add_New_Book(self):
-        pass
+
+        self.db = pymysql.connect(host='localhost', user='root', password='', db='library')
+        self.cur = self.db.cursor()
+
+        ################# Get From Input #######################
+        book_title = self.lineEdit_2.text()
+        book_code = self.lineEdit_3.text()
+        book_category = self.comboBox_3.CurrentText()
+        book_author = self.comboBox_4.CurrentText()
+        book_publisher = self.comboBox_5.CurrentText()
+        book_price = self.lineEdit_4.text()
 
     def Search_Books(self):
         pass
@@ -86,13 +101,37 @@ class MainApp(QMainWindow, ui):
     #################### Settings #########################
 
     def Add_New_Category(self):
-        pass
+
+        self.db = pymysql.connect(host='localhost', user='root', password='', db='library')
+        self.cur = self.db.cursor()
+
+        ################# Get From Input #######################
+        category_name = self.lineEdit_20.text()
+
+        self.cur.execute('''
+            INSERT INTO category (category_name) VALUES (%s)
+            ''', (category_name))
+
+        self.db.commit()
+        print('Category was created.')
 
     def Add_New_Author(self):
-        pass
+
+        self.db = pymysql.connect(host='localhost', user='root', password='', db='library')
+        self.cur = self.db.cursor()
+
+        ################# Get From Input #######################
+        author_name = self.lineEdit_21.text()
+
+
 
     def Add_New_Publisher(self):
-        pass
+
+        self.db = pymysql.connect(host='localhost', user='root', password='', db='library')
+        self.cur = self.db.cursor()
+
+        ################# Get From Input #######################
+        publisher_name = self.lineEdit_22.text()
 
 
 def main():
