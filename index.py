@@ -13,12 +13,13 @@ class MainApp(QMainWindow, ui):
         QMainWindow.__init__(self)
         self.setupUi(self)
         self.Handle_UI_Changes()
+        self.Handle_Buttons()
 
     def Handle_UI_Changes(self):
         self.Hide_Theme()
 
     def Handle_Buttons(self):
-        pass
+        self.pushButton_5.clicked.connect(self.Show_Theme)
 
     def Show_Theme(self):
         self.groupBox_6.show()
