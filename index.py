@@ -52,6 +52,49 @@ class MainApp(QMainWindow, ui):
         self.tabWidget.setCurrentIndex(3)
 
 
+    #######################################################
+    #################### Books ############################
+
+    def Add_New_Book(self):
+        pass
+
+    def Search_Books(self):
+        pass
+
+    def Edit_Books(self):
+        pass
+
+    def Delete_Books(self):
+        pass
+
+
+
+    #######################################################
+    #################### Users ############################
+
+
+    def Add_New_User(self):
+        pass
+
+    def Login(self):
+        pass
+
+    def Edit_Users(self):
+        pass
+
+    #######################################################
+    #################### Settings #########################
+
+    def Add_New_Category(self):
+        pass
+
+    def Add_New_Author(self):
+        pass
+
+    def Add_New_Publisher(self):
+        pass
+
+
 def main():
     app = QApplication(sys.argv)
     window = MainApp()
